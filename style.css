@@ -1,7 +1,7 @@
 body {
   font-family: Arial, Helvetica, sans-serif;
   background-image: linear-gradient(#615dad, #ffc8da);
-  background-size: 100vh 100vw;
+  background-repeat: no-repeat;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -61,7 +61,87 @@ a {
 .start {
   text-align: center;
   text-decoration: none;
-  line-height: 50px;
+  line-height: 40px;
+  width: 340px;
 }
 
+/*Úkol 2*/
 
+.vse {
+  background-color: #283e50;
+  border-radius: 10px 10px 0 0;
+  color: #ffffff;
+}
+h1 {
+  text-align: center;
+  padding-top: 40px;
+}
+.box figure figcaption {
+  font-size: 14px;
+}
+figcaption {
+  padding-bottom: 20px;
+}
+
+.seznamPravidel img {
+  max-width: 100%;
+}
+
+.seznamPravidel figcaption {
+  text-align: center;
+}
+
+.kolecko,
+.krizek {
+  filter: invert(100%);
+  width: 1em;
+  height: 1em;
+}
+li {
+  padding: 10px;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+a {
+  text-decoration: none;
+  text-align: center;
+  padding: 10px;
+}
+.uvodniStranka {
+  background-color: #1fcca4;
+  line-height: 30px;
+}
+
+.zacitHrat {
+  background-color: #0197f6;
+  line-height: 30px;
+}
+.uvodniStranka:hover,
+.uvodniStranka:active,
+.uvodniStranka:focus {
+  background-color: #1cbb96;
+}
+
+.zacitHrat:hover,
+.zacitHrat:active,
+.zacitHrat:focus {
+  background-color: #0090e9;
+}
+
+/*V sekci s třídou .tlacitka mi bohužel nejde nastavit automatické přizpůsobení obsahu. Kdyby sis všimla, v čem je problmém, napiš mi to prosím do komentáře*/
+
+@media screen and (min-width: 650px) {
+  .vsechnyObrazky {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .box {
+    flex-basis: 50%;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .vse {
+    margin-top: 50px;
+  }
+}
