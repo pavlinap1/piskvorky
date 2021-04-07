@@ -71,6 +71,7 @@ a {
   background-color: #283e50;
   border-radius: 10px 10px 0 0;
   color: #ffffff;
+  width: 400px;
 }
 h1 {
   text-align: center;
@@ -143,5 +144,6 @@ a {
 @media screen and (min-width: 1000px) {
   .vse {
     margin-top: 50px;
+    width: 700px;
   }
 }
