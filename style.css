@@ -147,3 +147,105 @@ a {
     width: 700px;
   }
 }
+
+/*Úkol 3*/
+
+.hra {
+  max-width: 80vmin;
+}
+
+.hra h1 {
+  text-align: center;
+  font-size: 100px;
+  color: white;
+}
+
+.nadPolem {
+  display: flex;
+  align-items: baseline;
+  margin: 20px auto;
+  width: 60vmax;
+}
+
+.nadPolem img {
+  filter: invert(100%);
+  width: 1em;
+  height: 1em;
+  margin-left: 5px;
+}
+
+.hraje {
+  display: flex;
+  align-items: baseline;
+  font-weight: bold;
+  font-size: 25px;
+  color: white;
+}
+
+.tlacitkaHra {
+  display: flex;
+  flex-grow: 1;
+  justify-content: flex-end;
+}
+
+.tlacitkaHra img {
+  filter: invert(0%);
+  border-radius: 5px;
+  margin-left: 0px;
+}
+
+.tlacitkaHra a {
+  margin-left: 15px;
+  border-radius: 5px;
+  display: inline;
+  padding: 10px;
+}
+
+.tlacitkoHome a {
+  background-color: #1fcca4;
+}
+
+.tlacitkoHome :hover,
+.tlacitkoHome :focus,
+.tlacitkoHome :active {
+  background-color: #1cbb96;
+}
+
+.tlacitkoRestart a {
+  background-color: #0197f6;
+}
+
+.tlacitkoRestart :hover,
+.tlacitkoRestart :focus,
+.tlacitkoRestart :active {
+  background-color: #0090e9;
+}
+
+.pole {
+  background-image: linear-gradient(#615dad, #ffc8da);
+  width: 60vmax;
+  height: 60vmax;
+  display: flex;
+  flex-wrap: wrap;
+  border: 1px solid black;
+}
+
+.pole button {
+  width: 10%;
+  margin: 0;
+  padding: 0;
+  border: 1px solid black;
+  background-color: transparent;
+}
+
+button:hover,
+button:focus,
+button:active {
+  background-color: rgba(260, 260, 260, 0.25);
+}
+
+@media screen and (min-width: 800px) {
+  .hra {
+    max-width: 1000px;
+  }
+}
