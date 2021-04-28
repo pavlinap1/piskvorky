@@ -250,3 +250,15 @@ button:active {
   }
 }
 
+/*Úkol 4*/
+
+.board__field--circle {
+  background: url(Obrazky/circle.svg) center no-repeat rgba(260, 260, 260, 0.4);
+  animation: createPicture 0.15s;
+  
+}
+
+.board__field--cross {
+  background: url(Obrazky/cross.svg) center no-repeat rgba(260, 260, 260, 0.4);
+  animation: createPicture 0.15s;
+}
