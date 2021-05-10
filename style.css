@@ -62,7 +62,7 @@ a {
   text-align: center;
   text-decoration: none;
   line-height: 40px;
-  width: 340px;
+  width: 100%;
 }
 
 /*Úkol 2*/
@@ -106,7 +106,6 @@ li {
 a {
   text-decoration: none;
   text-align: center;
-  padding: 10px;
 }
 .uvodniStranka {
   background-color: #1fcca4;
@@ -128,8 +127,10 @@ a {
 .zacitHrat:focus {
   background-color: #0090e9;
 }
-
-/*V sekci s třídou .tlacitka mi bohužel nejde nastavit automatické přizpůsobení obsahu. Kdyby sis všimla, v čem je problmém, napiš mi to prosím do komentáře*/
+.tlacitka a {
+  width: 100%;
+  line-height: 40px;
+}
 
 @media screen and (min-width: 650px) {
   .vsechnyObrazky {
@@ -149,11 +150,6 @@ a {
 }
 
 /*Úkol 3*/
-
-.hra {
-  max-width: 80vmin;
-}
-
 .hra h1 {
   text-align: center;
   font-size: 100px;
@@ -255,7 +251,6 @@ button:active {
 .board__field--circle {
   background: url(Obrazky/circle.svg) center no-repeat rgba(260, 260, 260, 0.4);
   animation: createPicture 0.15s;
-  
 }
 
 .board__field--cross {
